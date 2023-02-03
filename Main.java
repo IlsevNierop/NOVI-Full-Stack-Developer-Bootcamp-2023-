@@ -156,7 +156,7 @@
                         }
                     }
 
-                    newAmount = (inputAmountMoney / currency1 * currency2);
+                    newAmount = (inputAmountMoney / (1/currency1) * currency2);
                     System.out.println(df.format(inputAmountMoney) + " " + inputCurrency + " is " + df.format(newAmount) + " " + inputToCurrency);
 
                     System.out.println("Do you want to make another exchange? Yes or No?");
